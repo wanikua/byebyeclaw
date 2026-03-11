@@ -13,7 +13,7 @@
 **macOS / Linux：**
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/wanikua/byebyeclaw/main/uninstall.sh | bash
+curl -fsSL https://raw.githubusercontent.com/wanikua/byebyeclaw/main/uninstall.sh -o /tmp/byebyeclaw.sh && bash /tmp/byebyeclaw.sh
 ```
 
 **Windows (PowerShell)：**
