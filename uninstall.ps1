@@ -1,4 +1,4 @@
-<# 
+﻿<# 
 .SYNOPSIS
     ByeByeClaw - Uninstall all Claw-family AI agent tools / 一键卸载所有 Claw 家族 AI Agent 工具
 .DESCRIPTION
