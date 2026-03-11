@@ -401,7 +401,7 @@ done
 
 # --- 14. temp files ---
 echo -e "${DIM}  [$(t tmpfile_sec)]${NC}"
-for tmpbase in "/tmp" "$TMPDIR"; do
+for tmpbase in "/tmp" "${TMPDIR:-}"; do
     [ -z "$tmpbase" ] && continue
     while IFS= read -r td; do
         [ -n "$td" ] && found "dir" "$td" "$(t tmpfile_dir): $td"
@@ -464,7 +464,7 @@ echo ""
 ERRORS=0
 
 ok()   { echo -e "${GREEN}✓${NC}"; }
-fail() { echo -e "${RED}✗ $(t fail)${NC}"; ((ERRORS++)); }
+fail() { echo -e "${RED}✗ $(t fail)${NC}"; ERRORS=$((ERRORS + 1)); }
 
 do_rm() {
     local desc="$1"; shift
