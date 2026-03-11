@@ -2,7 +2,27 @@
 
 [English](./README.md)
 
-一键卸载所有 **Claw 家族** AI Agent 工具。干净、彻底、无残留。
+**一行命令卸载所有 Claw 家族 AI Agent。无残留。**
+
+装了一堆 Claw 试完就忘？OpenClaw、ZeroClaw、NanoClaw、IronClaw... 配置目录东一个西一个，npm 全局包堆成山，Docker 容器还在后台跑？
+
+一行命令，全部带走 👋
+
+## 🚀 快速使用
+
+**macOS / Linux：**
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/wanikua/byebyeclaw/main/uninstall.sh | bash
+```
+
+**Windows (PowerShell)：**
+
+```powershell
+irm https://raw.githubusercontent.com/wanikua/byebyeclaw/main/uninstall.ps1 | iex
+```
+
+试完不想留？**Bye bye.** 🦀
 
 ## 🦞 支持卸载的工具
 
@@ -20,34 +40,22 @@
 | [SharpClaw](https://github.com/imxcstar/sharpclaw) | — | .NET 实现 |
 | [MoltBot/MoltWorker](https://github.com/cloudflare/moltworker) | 10k⭐ | Cloudflare Workers 版 |
 
-## 🚀 快速使用
-
-**macOS / Linux：**
-
-```bash
-curl -fsSL https://raw.githubusercontent.com/wanikua/byebyeclaw/main/uninstall.sh | bash
-```
-
-**Windows (PowerShell)：**
-
-```powershell
-irm https://raw.githubusercontent.com/wanikua/byebyeclaw/main/uninstall.ps1 | iex
-```
-
 ## 🔍 卸载范围（无残留）
+
+15 个扫描维度，一个不漏：
 
 | 类别 | 详情 |
 |------|------|
 | 包管理器 | npm、pip、pipx、cargo 全局安装 |
 | 二进制文件 | 所有 `*claw*`、`nanobot` 二进制 |
-| 配置和数据 | `~/.openclaw/`、`~/.zeroclaw/` 等全部目录 |
-| 缓存 | 所有缓存目录 |
+| 配置和数据 | `~/.openclaw/`、`~/.zeroclaw/`、`~/.config/*/` 等全部目录 |
+| 缓存 | 所有 Claw 缓存目录 |
 | 系统服务 | systemd、launchd (macOS)、Windows 服务 |
 | Docker | 容器和镜像 |
-| VS Code | Claw 相关扩展（含 Cursor、Insiders） |
+| VS Code | Claw 相关扩展（含 Cursor、VS Code Insiders） |
 | 定时任务 | crontab 条目 |
 | 进程 | 运行中的 Claw 进程 |
-| Shell 配置 | 检测 `.bashrc`、`.zshrc` 等中的 PATH/alias 残留 |
+| Shell 配置 | `.bashrc`、`.zshrc`、`.profile` 中的 PATH/alias 残留 |
 | 临时文件 | `/tmp/*claw*` |
 | 日志 | 状态和日志目录 |
 | 注册表 | Windows 注册表条目（仅 PowerShell） |
@@ -74,6 +82,10 @@ irm https://raw.githubusercontent.com/wanikua/byebyeclaw/main/uninstall.ps1 | ie
 - 自动检测系统语言（中文/英文）
 - Shell 配置文件仅标记不自动修改（建议手动检查）
 - 不会影响其他无关工具
+
+## 🔑 关键词
+
+`openclaw 卸载` · `zeroclaw 卸载` · `nanoclaw 删除` · `ironclaw 卸载` · `nullclaw 删除` · `tinyclaw 卸载` · `nanobot 删除` · `microclaw 卸载` · `claw ai agent 卸载工具` · `claw 一键清理` · `claw 家族卸载` · `openclaw uninstall` · `remove claw tools`
 
 ## 📜 License
 

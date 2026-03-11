@@ -2,7 +2,27 @@
 
 [中文文档](./README.zh-CN.md)
 
-One-click uninstaller for **all Claw-family** AI agent tools. Clean, thorough, zero residue.
+**One command to uninstall ALL Claw-family AI agents. Zero residue.**
+
+Tried OpenClaw, ZeroClaw, NanoClaw, IronClaw and forgot to clean up? Config dirs scattered everywhere, npm globals piling up, Docker containers still running?
+
+One line. Zero residue. 👋
+
+## 🚀 Quick Start
+
+**macOS / Linux:**
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/wanikua/byebyeclaw/main/uninstall.sh | bash
+```
+
+**Windows (PowerShell):**
+
+```powershell
+irm https://raw.githubusercontent.com/wanikua/byebyeclaw/main/uninstall.ps1 | iex
+```
+
+Done with the claws? **Bye bye.** 🦀
 
 ## 🦞 Supported Tools
 
@@ -20,34 +40,22 @@ One-click uninstaller for **all Claw-family** AI agent tools. Clean, thorough, z
 | [SharpClaw](https://github.com/imxcstar/sharpclaw) | — | .NET implementation |
 | [MoltBot/MoltWorker](https://github.com/cloudflare/moltworker) | 10k⭐ | Cloudflare Workers edition |
 
-## 🚀 Quick Start
-
-**macOS / Linux:**
-
-```bash
-curl -fsSL https://raw.githubusercontent.com/wanikua/byebyeclaw/main/uninstall.sh | bash
-```
-
-**Windows (PowerShell):**
-
-```powershell
-irm https://raw.githubusercontent.com/wanikua/byebyeclaw/main/uninstall.ps1 | iex
-```
-
 ## 🔍 What Gets Cleaned
+
+15 scan dimensions — nothing left behind:
 
 | Category | Details |
 |----------|---------|
 | Package managers | npm, pip, pipx, cargo global installs |
-| Binaries | All `*claw*`, `nanobot` binaries |
-| Config & data | `~/.openclaw/`, `~/.zeroclaw/`, etc. |
-| Cache | All cache directories |
+| Binaries | All `*claw*`, `nanobot` binaries in PATH |
+| Config & data | `~/.openclaw/`, `~/.zeroclaw/`, `~/.config/*/` etc. |
+| Cache | All Claw cache directories |
 | Services | systemd, launchd (macOS), Windows services |
 | Docker | Containers and images |
-| VS Code | Claw-related extensions (inc. Cursor, Insiders) |
-| Cron/Tasks | crontab entries |
+| VS Code | Claw extensions (inc. Cursor, VS Code Insiders) |
+| Cron / Tasks | crontab entries |
 | Processes | Running Claw processes |
-| Shell config | Detects PATH/alias residue in `.bashrc`, `.zshrc`, etc. |
+| Shell config | PATH / alias residue in `.bashrc`, `.zshrc`, `.profile` |
 | Temp files | `/tmp/*claw*` |
 | Logs | State and log directories |
 | Registry | Windows registry entries (PowerShell only) |
@@ -74,6 +82,10 @@ irm https://raw.githubusercontent.com/wanikua/byebyeclaw/main/uninstall.ps1 | ie
 - Auto-detects system language (Chinese / English)
 - Shell config files are flagged but not auto-edited (manual review recommended)
 - Won't affect unrelated tools
+
+## 🔑 Keywords
+
+`openclaw uninstall` · `zeroclaw uninstall` · `nanoclaw remove` · `ironclaw uninstall` · `nullclaw remove` · `tinyclaw uninstall` · `nanobot remove` · `microclaw uninstall` · `rayclaw remove` · `sharpclaw uninstall` · `moltbot remove` · `claw ai agent uninstaller` · `remove claw tools` · `claw cleanup` · `claw family uninstall`
 
 ## 📜 License
 
